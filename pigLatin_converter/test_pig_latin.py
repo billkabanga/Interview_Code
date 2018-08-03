@@ -3,7 +3,7 @@ from pig_latin import word_converter
 
 class TestPig_latin(unittest.TestCase):
 
-    def test_word_is_converted(self):
+    def test_word_is_converted(self):#method to test if the word is converted as expected
         word = 'will'
         assert word_converter(word) == 'illway'
 
@@ -25,7 +25,7 @@ class TestPig_latin(unittest.TestCase):
         word = 'electrician'
         assert word_converter(word) == 'electricianway'
         
-    def test_raise_error_for_integer(self):
+    def test_raise_error_for_integer(self):#method to test if error is raised for an integer.
         word = 55
         word = str(word)
         self.assertEqual(word_converter(word),'Strictly enter a word')   
